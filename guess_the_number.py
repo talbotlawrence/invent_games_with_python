@@ -2,7 +2,7 @@ import random
 
 guesses = 0
 
-name = input("What is your name?")
+name = input("What is your name? ")
 
 number = random.randint(1,20)
 print("")
@@ -11,7 +11,7 @@ print("------------------")
 print("")
 
 while guesses < 4:
-    print("Please take a guess.")
+    print("Please take a guess:")
     guess = input()
     guess = int(guess)
     #Obviously, your math won't work unless you convert guess into an integer.  It arrives as a string
