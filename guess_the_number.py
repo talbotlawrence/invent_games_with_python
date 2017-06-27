@@ -36,9 +36,6 @@ if guess == number:
     "Wow, you got it {}, you fine-ass nerd!!",
     "Well aren't you smart {}.  Just know that you will never be smarter than Talbot Lawrence!!")
 
-    #Change guesses back into a string so that you can print it in the terminal
-    guesses = str(guesses)
-
     print("")
     print(random.choice(good_responses).format(name))
     print("")
