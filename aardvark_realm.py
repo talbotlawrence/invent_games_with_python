@@ -10,6 +10,7 @@ def displayIntro():
     print()
 
 def chooseCave():
+    """The return of this method will always be the number 1 or 2"""
     cave = ""
     while cave != "1" and cave != "2":
         cave = input("Which cave will you go into? (1 or 2)")
@@ -44,12 +45,24 @@ def checkCave(potato):
 
 #Below kicks off the whole game
 #None of the methods get called until the lines below
+
+# versions_of_yes = ("Yes", "yes", "y")
+# for a_yes_answer in versions_of_yes:
+# while play_again == a_yes_answer:
+
 play_again = "yes"
-# version_of_yes = ("Yes", "yes", "y")
-# for play_again in version_of_yes:
-# loop then if answer == play_again:
-while play_again == "yes" or play_again == "y" or play_again == "Yes":
-    displayIntro()
-    caveNumber = chooseCave()
-    checkCave(caveNumber)       #caveNumber will be the value of 'cave' from the chooseCave method
-    play_again = input("Do you want to play again? (yes or no)")
+versions_of_yes = ("Yes", "yes", "y")
+
+for a_yes_answer in versions_of_yes:
+    while play_again == a_yes_answer:
+        displayIntro()
+        caveNumber = chooseCave()
+        checkCave(caveNumber)
+        play_again = input("Do you want to play again stupid?  (yes or no)")
+
+
+# while play_again == "yes" or play_again == "y" or play_again == "Yes":
+#     displayIntro()
+#     caveNumber = chooseCave()
+#     checkCave(caveNumber)       #caveNumber will be the value of 'cave' from the chooseCave method
+#     play_again = input("Do you want to play again? (yes or no)")
